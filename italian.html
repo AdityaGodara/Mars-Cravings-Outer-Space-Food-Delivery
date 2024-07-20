@@ -1,123 +1,189 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Italian Cuisine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Cuisine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:wght@400;600&family=Niconne&family=Bebas+Neue&family=Raleway:wght@300;400&family=Righteous&family=Monofett&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c0a7769b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/indian.css">
+	<script src="Script/script.js"></script>
+	<style>
+		body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #outro {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 3vh;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        #nav {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        #check {
+            color: lightgreen;
+            font-size: 24px;
+            font-family: 'Slabo 27px', serif;
+            opacity: 0;
+        }
+        #deliver_pr {
+            font-family: 'Righteous', cursive;
+            border: solid 2px lightgreen;
+            background-color: lightgreen;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            transition-duration: 0.5s;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .tag1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .food1, .food2 {
+            background-image: url(images/download.jpg);
+            box-shadow: 0px 0px 5px black;
+            border-radius: 20px;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+        }
+        #image {
+            height: auto;
+            width: 80%;
+            max-width: 180px;
+            border-radius: 20px;
+            border: 2px ridge black;
+            box-shadow: 0px 0px 10px black;
+            margin-bottom: 20px;
+        }
+        .food-title {
+            font-size: 22px;
+            font-family: 'Josefin Sans', sans-serif;
+            margin-bottom: 10px;
+        }
+        .food-description, .food-price {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            border-radius: 10px;
+            padding: 4px;
+            width: 100px;
+            font-family: 'Raleway', sans-serif;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            #outro {
+                flex-direction: column;
+                align-items: center;
+            }
+            #nav {
+                padding: 5px;
+            }
+            .heading h1 {
+                font-size: 24px;
+            }
+            #deliver_pr {
+                font-size: 16px;
+            }
+            .food-title {
+                font-size: 20px;
+            }
+            .food-description, .food-price {
+                font-size: 14px;
+            }
+        }
+	</style>
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
-
-
-
-<link rel="stylesheet" type="text/css" href="css/indian.css">
-<script src="https://kit.fontawesome.com/0c0a7769b3.js" crossorigin="anonymous"></script>
-<script src="Script/script.js"></script>
-<meta charset="UTF-8">
-<style type="text/css">
-	.success{
-	animation-name: shown;
-	animation-duration: 5s;
-}
-@keyframes shown{
-	0%{opacity: 0;}
-	40%{opacity: 1;}
-	50%{opacity: 1;}
-	60%{opacity: 1;}
-	100%{opacity: 0;}
-}
-#deliver_pr:hover{
-	cursor: pointer;
-	border-radius: 20px;
-}
-</style>
 <body>
-<center><div style="padding-top: 3vh; font-family: 'Josefin Sans';"id="outro">
-		<span style="flex: 1; padding: 40px;"><a href="index.html" id="nav">Home</a></span>
-		<span style="flex: 1; padding: 40px;"><a href="about.html" id="nav">About Us</a></span>
-		<span style="flex: 1; padding: 40px;"><a href="howitwork.html" id="nav">How it works</a></span>
-	</div>
-	</center>
+    <nav id="outro">
+        <a href="index.html" id="nav">Home</a>
+        <a href="about.html" id="nav">About Us</a>
+        <a href="howitwork.html" id="nav">How it works</a>
+    </nav>
 
-<div class="heading" style="text-align: center;"><h1>ITALIAN CUISINE</h1></div>
+    <div class="heading">
+        <h1>ITALIAN CUISINE</h1>
+    </div>
 
-<span style="color: lightgreen; font-size: 30px; opacity: 0; font-family: 'Slabo 27px', serif;" id="check"><i class="fas fa-check"></i>Items will be delivered</span>
+    <div style="text-align: center;">
+        <span id="check"><i class="fas fa-check"></i>Items will be delivered</span>
+        <button id="deliver_pr" onclick="deliver();">Deliver</button>
+    </div>
 
-<button style="font-family: 'Righteous' , cursive; border: solid 2px lightgreen; background-color: lightgreen; color: white; float: right; font-size: 20px; margin-top: -15px; margin-right: 30px; padding: 10px; transition-duration: 0.5s; margin-bottom: 100px;" onclick="deliver();" id="deliver_pr">Deliver</button>
+    <div class="tag1">
+        <img src="images/1.1.jpg" id="image" alt="Panzenella">
+        <div class="food1">
+            <div class="food-title">Panzenella</div>
+            <div class="food-description">Tuscan Bread Salad, Apple Smoothy with some Marsian Swetners</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
 
-<div class="tag1" >
-	<img src="images/1.1.jpg" style="	height: 113px;width: 180px;margin-top: 28px; border-radius: 20px; float: left; margin-left: 30px ;margin-bottom: 30px;border: 2px ridge black; box-shadow: 0px 0px 10px black;" id="image">
-		<div class="food1" style="	background-image: url(images/download.jpg);flex: 1;margin-right: 20px;box-shadow: 0px 0px 5px black; border-radius: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px;" id="box">
-		<span style=" font-size: 25px; flex: 1;margin-right: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px; font-family: 'Josefin Sans';">Panzenella</span><br><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">Tuscan Bread Salad, Apple Smoothy with some Marsian Swetners</span><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">₹ 500 | $80</span><br>
-		<func style="float: right; margin-right: 83px; margin-top: -60px; ">
-			<input type="text" placeholder="Quantity" style="border-radius: 10px; padding: 4px; width: 100px; font-family: 'Raleway', sans-serif; border:none;">
-		</func>
-	</div>
-</div>
-<div class="tag1">
-	<img src="images/2.1.jpg" style="height:113px;width: 180px;margin-top: 28px; border-radius: 20px; float: left; margin-left: 30px ;margin-bottom: 30px;border: 2px ridge black; box-shadow: 0px 0px 10px black" id="image">
-		<div class="food2"  style="background-image: url(images/download.jpg);flex: 1;margin-right: 20px;box-shadow: 0px 0px 5px black; border-radius: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px;" id="box">
-		<span style="font-family: 'Josefin Sans'; font-size: 25px; margin-left: 20px; ">Bruschetta</span><br><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;"> Grilled bread topped with veggies, Fico Bianco del Cilento Juice.</span><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">₹ 5399 | $80</span><br>
-		<func style="float: right; margin-right: 83px; margin-top: -60px; ">
-			<input type="text" placeholder="Quantity" style="border-radius: 10px; padding: 4px; width: 100px; font-family: 'Raleway', sans-serif; border:none;">
-		</func>
-	</div>
-</div>
-<div class="tag1" >
-	<img src="images/3.1.jpg" style="	height: 113px;width: 180px;margin-top: 28px; border-radius: 20px; float: left; margin-left: 30px ;margin-bottom: 30px;border: 2px ridge black; box-shadow: 0px 0px 10px black;" id="image">
-		<div class="food1" style="	background-image: url(images/download.jpg);flex: 1;margin-right: 20px;box-shadow: 0px 0px 5px black; border-radius: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px;" id="box">
-		<span style=" font-size: 25px; flex: 1;margin-right: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px; font-family: 'Josefin Sans';">Margherita Pizza</span><br><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">Tomato, basil and fresh mozzarella combo pizza with Coca-cola</span><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">₹ 500 | $80</span><br>
-		<func style="float: right; margin-right: 83px; margin-top: -60px; ">
-			<input type="text" placeholder="Quantity" style="border-radius: 10px; padding: 4px; width: 100px; font-family: 'Raleway', sans-serif; border:none;">
-		</func>
-	</div>
-</div>
-<div class="tag1" >
-	<img src="images/4.1.jpg" style="	height: 113px;width: 180px;margin-top: 28px; border-radius: 20px; float: left; margin-left: 30px ;margin-bottom: 30px;border: 2px ridge black; box-shadow: 0px 0px 10px black;" id="image">
-		<div class="food1" style="	background-image: url(images/download.jpg);flex: 1;margin-right: 20px;box-shadow: 0px 0px 5px black; border-radius: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px;" id="box">
-		<span style=" font-size: 25px; flex: 1;margin-right: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px; font-family: 'Josefin Sans';">Pasta Carbonara</span><br><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;"> Pasta with bacon; Coca-cola</span><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">₹ 500 | $80</span><br>
-		<func style="float: right; margin-right: 83px; margin-top: -60px; ">
-			<input type="text" placeholder="Quantity" style="border-radius: 10px; padding: 4px; width: 100px; font-family: 'Raleway', sans-serif; border:none;">
-		</func>
-	</div>
-</div>
-<div class="tag1" >
-	<img src="images/5.1.jpg" style="	height: 113px;width: 180px;margin-top: 28px; border-radius: 20px; float: left; margin-left: 30px ;margin-bottom: 30px;border: 2px ridge black; box-shadow: 0px 0px 10px black;" id="image">
-		<div class="food1" style="	background-image: url(images/download.jpg);flex: 1;margin-right: 20px;box-shadow: 0px 0px 5px black; border-radius: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px;" id="box">
-		<span style=" font-size: 25px; flex: 1;margin-right: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px; font-family: 'Josefin Sans';">Lasagna</span><br><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">A lasagna with parmesan cheese and layered with a mix of vegies</span><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">₹ 500 | $80</span><br>
-		<func style="float: right; margin-right: 83px; margin-top: -60px; ">
-			<input type="text" placeholder="Quantity" style="border-radius: 10px; padding: 4px; width: 100px; font-family: 'Raleway', sans-serif; border:none;">
-		</func>
-	</div>
-</div>
-<div class="tag1" >
-	<img src="images/6.1.jpg" style="	height: 113px;width: 180px;margin-top: 28px; border-radius: 20px; float: left; margin-left: 30px ;margin-bottom: 30px;border: 2px ridge black; box-shadow: 0px 0px 10px black;" id="image">
-		<div class="food1" style="	background-image: url(images/download.jpg);flex: 1;margin-right: 20px;box-shadow: 0px 0px 5px black; border-radius: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px;" id="box">
-		<span style=" font-size: 25px; flex: 1;margin-right: 20px; padding: 40px; margin-top: 20px; margin-bottom: 30px; font-family: 'Josefin Sans';">Pasta Con Pomodoro E Basilico</span><br><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">basic cooked pasta sauce with special Marsian herbs; Chilled Coca-cola</span><br>
-		<span style="font-family: 'Raleway', sans-serif; font-size: 18px; margin-left: 20px; margin-top: 40px;">₹ 500 | $80</span><br>
-		<func style="float: right; margin-right: 83px; margin-top: -60px; ">
-			<input type="text" placeholder="Quantity" style="border-radius: 10px; padding: 4px; width: 100px; font-family: 'Raleway', sans-serif; border:none;">
-		</func>
-	</div>
-</div>
-</body>	
+    <div class="tag1">
+        <img src="images/2.1.jpg" id="image" alt="Bruschetta">
+        <div class="food2">
+            <div class="food-title">Bruschetta</div>
+            <div class="food-description">Grilled bread topped with veggies, Fico Bianco del Cilento Juice.</div>
+            <div class="food-price">₹ 5399 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/3.1.jpg" id="image" alt="Margherita Pizza">
+        <div class="food1">
+            <div class="food-title">Margherita Pizza</div>
+            <div class="food-description">Tomato, basil and fresh mozzarella combo pizza with Coca-cola</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/4.1.jpg" id="image" alt="Pasta Carbonara">
+        <div class="food1">
+            <div class="food-title">Pasta Carbonara</div>
+            <div class="food-description">Pasta with bacon; Coca-cola</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/5.1.jpg" id="image" alt="Lasagna">
+        <div class="food1">
+            <div class="food-title">Lasagna</div>
+            <div class="food-description">A lasagna with parmesan cheese and layered with a mix of vegies</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <div class="tag1">
+        <img src="images/6.1.jpg" id="image" alt="Pasta Con Pomodoro E Basilico">
+        <div class="food1">
+            <div class="food-title">Pasta Con Pomodoro E Basilico</div>
+            <div class="food-description">basic cooked pasta sauce with special Marsian herbs; Chilled Coca-cola</div>
+            <div class="food-price">₹ 500 | $80</div>
+            <input type="text" placeholder="Quantity">
+        </div>
+    </div>
+
+    <script src="Script/script.js"></script>
+</body>
 </html>
